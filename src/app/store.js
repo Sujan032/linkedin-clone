@@ -1,8 +1,11 @@
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import userReducer from "../features/userSlice";
+import toggleThemeReducer from "../features/toggleThemeReducer";
+
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    user: userReducer,
+    toggleTheme: toggleThemeReducer,
   },
 });

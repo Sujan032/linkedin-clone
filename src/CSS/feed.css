@@ -1,0 +1,180 @@
+.feed__container {
+  display: flex;
+  flex: 0.5;
+  margin: 0px;
+  padding: 0 25px;
+  min-width: 500px;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
+.feed {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.feed .feed__input {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.feed .feed__input form {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.feed .feed__input form input[type="text"] {
+  flex: 1;
+  border-radius: 25px 0px 0px 25px;
+  padding: 3px 8px;
+  margin-left: 10px;
+  height: 48px;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-right: none !important;
+}
+
+.feed .feed__input form input[type="submit"] {
+  color: white;
+  border: 0;
+  cursor: pointer;
+  height: 48px;
+  width: 65px;
+  padding: 3px 8px;
+  transition: all 0.2s ease;
+  align-items: center;
+  outline-width: 0;
+  border-radius: 0px 25px 25px 0px;
+}
+
+.feed .file {
+  width: 100%;
+  padding: 0px 7px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.feed .file img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  object-position: center;
+}
+.feed .feed__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+}
+.feed .feed__options .option {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  border-radius: 5px;
+  padding: 10px 16px;
+}
+
+.feed__options .option:hover {
+  cursor: pointer;
+}
+.swal2-container {
+  overflow: hidden !important;
+}
+@media screen and (max-width: 1280px) {
+  .feed {
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1045px) {
+  .feed__container {
+    flex: 1.5;
+    min-width: 400px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .feed .feed__options .option {
+    padding: 10px 25px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .feed__container {
+    flex: 0.7;
+    padding: 0px 15px;
+  }
+  .feed {
+    padding: 0px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .feed__container {
+    flex: 1;
+    margin: 0px 20px;
+  }
+  .feed .feed__input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .feed__container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .feed {
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .feed .feed__input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .feed__container {
+    min-width: auto;
+  }
+  .feed .feed__input {
+    padding: 12px 5px;
+  }
+  .feed .feed__input form input[type="text"] {
+    padding: 2px 5px;
+    height: 42px;
+    font-size: 12px;
+  }
+  .feed .feed__input form input[type="submit"] {
+    padding: 2px 5px;
+    width: 50px;
+    height: 42px;
+    font-size: 12px;
+  }
+  .feed .feed__options .option {
+    padding: 8px 12px;
+  }
+  .feed .feed__options .option svg {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 338px) {
+  .feed .feed__options .option {
+    padding: 8px;
+  }
+  .feed__input {
+    padding: 0px;
+  }
+}

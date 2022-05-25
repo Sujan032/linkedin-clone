@@ -1,0 +1,172 @@
+.signup__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.Signup {
+  width: 600px;
+  height: 550px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+.Signup .para {
+  font-size: 1.7rem;
+  margin-top: 0px;
+  color: rgba(34, 24, 24, 0.836);
+  display: flex;
+}
+
+.Signup img {
+  width: 180px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.form {
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+.form input {
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  height: 40px;
+  display: block;
+  width: 80%;
+  padding: 10px;
+  border: 0.2px solid #0a66c2;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+}
+.form input[type="submit"] {
+  border-radius: 0px;
+  background-color: #0a66c2;
+  border: 0;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #0e1096a9;
+}
+.form h4 {
+  font-weight: normal;
+  font-size: large;
+}
+.form h4 span {
+  color: #0a66c2;
+  cursor: pointer;
+}
+
+.form h4 span:hover {
+  text-decoration: underline;
+}
+
+.login {
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  width: 95%;
+  height: 100%;
+}
+
+.login .loginAnimation {
+  height: 350px;
+  width: 350px;
+  margin: auto;
+}
+.login .form {
+  width: 345px;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+    0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+.login .form input {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .Signup {
+    width: 435px;
+    margin-top: 25%;
+  }
+
+  .Signup img {
+    width: 150px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+  }
+
+  .login {
+    flex-direction: column;
+  }
+  .login .loginAnimation {
+    margin-top: 15%;
+    width: 150px;
+    height: 150px;
+  }
+
+  .form {
+    width: 320px;
+    height: 270px;
+    margin-top: 30px;
+  }
+  .form input {
+    font-size: 0.7rem;
+  }
+  .Signup .para {
+    font-size: 22px;
+  }
+  .form h4 {
+    font-weight: normal;
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 560px) {
+  .Signup img {
+    margin-top: 12%;
+  }
+}
+@media screen and (max-width: 410px) {
+  .Signup {
+    width: 420px;
+    height: 450px;
+    margin-top: 0px;
+  }
+  .Signup .para {
+    font-size: 18px;
+  }
+  .Signup .form input {
+    font-size: 0.65rem;
+  }
+  .login .loginAnimation {
+    width: 90px;
+    height: 90px;
+  }
+  .login .form {
+    width: 300px;
+    height: 280px;
+  }
+  .Signup .form {
+    width: 280px;
+    height: 280px;
+  }
+}
