@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/linkedin-clone/static/css/main.b5389420.css",
+    "main.js": "/linkedin-clone/static/js/main.64176ee5.js",
+    "static/media/ad.jpg": "/linkedin-clone/static/media/ad.5921cafe208880ce0d73.jpg",
+    "static/media/logo.png": "/linkedin-clone/static/media/logo.be7b91c05fdf2ef8f99e.png",
+    "static/media/LikeActive.svg": "/linkedin-clone/static/media/LikeActive.29321499a9d2a0f43c2fa18ed76fbf07.svg",
+    "index.html": "/linkedin-clone/index.html",
+    "static/media/Like.svg": "/linkedin-clone/static/media/Like.89a5035ea6b181686e8bfc68f02c3846.svg",
+    "static/media/Comment.svg": "/linkedin-clone/static/media/Comment.9632ae25705523d742e46560b476dd03.svg",
+    "static/media/Share.svg": "/linkedin-clone/static/media/Share.7f51bdf9ecb38363f7dd2f253e38972f.svg",
+    "static/media/Send.svg": "/linkedin-clone/static/media/Send.f0fa89c1370c188f9c898bd2551df8dc.svg",
+    "main.b5389420.css.map": "/linkedin-clone/static/css/main.b5389420.css.map",
+    "main.64176ee5.js.map": "/linkedin-clone/static/js/main.64176ee5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5389420.css",
+    "static/js/main.64176ee5.js"
+  ]
+}
