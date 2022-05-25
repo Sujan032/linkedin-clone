@@ -27,21 +27,17 @@ const Login = () => {
       auth
         .createUserWithEmailAndPassword(email, password)
         .then((userAuth) => {
-          userAuth.user
-            .updateProfile({
-              displayName: username,
-              photoURL: photoURL,
-            })
-            .then(() => {
-              dispatch(
-                loginUser({
-                  email: userAuth.user.email,
-                  uid: userAuth.user.uid,
-                  photoURL: photoURL,
-                  displayName: username,
-                })
-              );
-            });
+          userAuth.user.updateProfile({
+            displayName: username,
+            photoURL: photoURL,
+          });
+          userAuth.user.sendEmailVerification();
+          auth.signOut();
+          Swal.fire({
+            icon: "success",
+            title: "Email sent",
+            width: "400px",
+          });
         })
         .catch((error) => alert(error));
       setUserDetails({
@@ -64,14 +60,27 @@ const Login = () => {
     e.preventDefault();
     if (email && password) {
       auth.signInWithEmailAndPassword(email, password).then(({ user }) => {
-        dispatch(
-          loginUser({
-            email: user.email,
-            uid: user.uid,
-            photoURL: user.photoURL,
-            displayName: user.displayName,
-          })
-        );
+        if (!user.emailVerified) {
+          auth.signOut();
+          Swal.fire({
+            icon: "info",
+            title: "Oops...",
+            text: "Email is not verified!",
+            width: "400px",
+          });
+        }
+
+        else {
+          dispatch(
+            loginUser({
+              email: user.email,
+              uid: user.uid,
+              photoURL: user.photoURL,
+              displayName: user.displayName,
+            })
+          );
+        }
+        
       });
     } else {
       Swal.fire({
