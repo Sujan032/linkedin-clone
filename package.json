@@ -1,5 +1,6 @@
 {
   "name": "linkedin-clone",
+  "homepage": "https://Sujan032.github.io/linkedin-clone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,6 +31,8 @@
     "uuid": "^8.3.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -51,6 +54,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "jsdom-worker": "^0.2.1"
   },
   "jest": {
